@@ -9,6 +9,26 @@ body {
   line-height: 1.5;
 }
 
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.hero-banner div {
+  background-image: url(images\02-hero-bg.jpg);
+  margin: 0.5px;
+
+}
+.learnantino {
+  background-color: skyblue;
+  padding: 1px;
+  width: 200px;
+  margin: 3px;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+}
 h1,
 h2,
 h3,
