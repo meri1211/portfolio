@@ -1,7 +1,7 @@
 :root {
   --primary-color: skyblue;
+  --secondary-color: #363030;
 }
-
 
 * {
   box-sizing: border-box;
@@ -10,19 +10,22 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   line-height: 1.5;
 }
 
 .page-wrapper {
   display: grid;
   grid-template-columns: 30% 70%;
+  gap: 30px;
 }
 
 .hero-banner {
+  display: flex;
   background-image: url(/images/02-hero-bg.jpg);
   margin-bottom: 50px;
-  width: 100% ;
+  width: 100%;
   height: 100px;
   display: flex;
   justify-content: end;
@@ -30,19 +33,18 @@ body {
 }
 
 header {
-display: flex;
-width: 100%;
-height: 80px ;
-background-color: rgb(62, 56, 56) ;
-
+  display: flex;
+  width: 100%;
+  height: 80px;
+  background-color: var(--secondary-color, #292626);
 }
- a {
-  color: var( --primary-color, skyblue);
+
+a {
+  color: var(--primary-color, skyblue);
   align-items: center;
   margin: 10px;
- 
 }
- 
+
 nav {
   display: flex;
   flex-direction: row;
@@ -51,25 +53,32 @@ nav {
 }
 /*nav > a {
   display; flex;
-  flex-direction: flex- end;
+  flex-direction: flex-end;
 }*/
 #learnantino {
   display: flex;
-  background-color: var(--primary-color, skyblue );
-  padding: 1px;
-  width: 200px;
+  background-color: var(--primary-color, skyblue);
+  padding: 0.2px;
+  width: 250px;
+  height: fit-content;
   margin: 3px;
-  justify-content: end;
- 
+  justify-content: right;
 }
-#subtitle {
+
+
+.hero-banner div {
   display: flex;
   background-color: var(--primary-color, skyblue);
-  padding: 3px;
   width: 230px;
   margin: 10px;
-  justify-content: center;
+  justify-content: right;
 }
+
+#subtitle {
+  width: 230px;
+  margin: 10px;
+  justify-content: right;
+ }
 .page-section h2 {
   margin-left: 100px;
 }
@@ -88,13 +97,16 @@ h4,
 h5,
 h6 {
   margin: 0;
+  color: var(--secondary-color, #292626);
 }
 
 p {
   margin: 0;
 }
-#contact p {
-  justify-content:space-evenly;
+
+#contact li {
+  justify-content: space-around;
+  color: var(--secondary-color, #292626);
 }
 ul {
   display: flex;
@@ -104,21 +116,21 @@ ul {
 }
 
 #portfolio-images {
-  border-color: var(--primary-color, skyblue);
   display: grid;
-  grid-template-columns: 60% 20% 20%;
-  grid-template-rows: 100px 50px 50px 50px 50px;
+  border-color: var(--primary-color, skyblue);
+  grid-template-columns: 80%;
+  grid-template-rows: 40px 20px;
   grid-template-areas:
-  "surf surf surf"
-  "LED     calculator"
-  "pastel   form"
-  ;
+    "surf surf"
+    "LED calculator"
+    "pastel form";
 }
+
 #surf {
   grid-area: surf;
 }
 #led {
-  grid-area: LED ;
+  grid-area: LED;
 }
 #calculator {
   grid-area: calculator;
