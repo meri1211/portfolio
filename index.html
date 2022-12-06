@@ -1,53 +1,74 @@
 <!DOCTYPE html>
 <html lang="en-gb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Lernantino // Web Developer</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./css/style.css" />
-</head>
+  <body>
+    <!-- main logo / nav -->
+    <header>
+      <!--Used semantic HTML and replaced the div with header.-->
+      <h1 id="learnantino">Lernantino</h1>
+      <!--Gave an id to the h1 so that I can target it with CSS-->
+      <nav>
+        <a href="#about">About Me</a>
+        <a href="work">Work</a>
+        <a href="contact">Contact Me</a>
+        <a href="#">Resume</a>
+        <!--Conected the links in the nav to their respective sections on page-->
+      </nav>
+    </header>
 
-<body>
-  <!-- main logo / nav -->
-  <header >
-    <h1 class="learnantino">Lernantino</h1>
-    <nav>
-      <a href="#about">About Me</a>
-      <a href="work">Work</a>
-      <a href="contact">Contact Me</a>
-      <a href="">Resume</a>
-    </nav>
-  </header>
+    <!-- hero banner -->
+    <section class="hero-banner">
+      <div>
+        <h2 id="subtitle">Cool subtitle here!</h2>
+        <!--Gave an id to the h2 so that I can target it in CSS-->
+      </div>
+    </section>
 
-  <!-- hero banner -->
-  <section class="hero-banner">
-    <div>
-      <h2>Cool subtitle here!</h2>
-    </div>
-  </section>
-
-  <main class="page-wrapper">
-    <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About Me</h2>
-    </section>
-    <section>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente ipsa voluptate perferendis ab voluptatum, fuga magnam quibusdam laudantium similique. Iusto maxime laudantium ducimus a error quaerat mollitia eos dolorem fugiat quibusdam, laboriosam distinctio odit. Alias, velit. Nostrum, dolor! Officia cumque delectus recusandae excepturi natus laborum aliquam minima sed, quod architecto.</p>
-    </section>
-    <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
-    </section>
-    <section>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, molestias aperiam esse fugit eum dolorum. Atque eius impedit iusto minus velit. Exercitationem laborum, totam non sint cupiditate, laboriosam deleniti, aliquam sit sequi ipsum deserunt mollitia debitis magnam accusantium molestiae quo quidem quia amet maxime reprehenderit voluptate labore possimus quod. Suscipit corrupti repellendus magnam hic omnis qui est animi natus maiores!</p>
-    </section>
-    <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
-    </section>
-  </main>
-</body>
-
+    <main class="page-wrapper">
+      <!-- about me -->
+      <section class="page-section" id="about">
+        <h2>About Me</h2>
+      </section>
+      <section>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
+          ipsa voluptate perferendis ab voluptatum, fuga magnam quibusdam
+          laudantium similique. Iusto maxime laudantium ducimus a error quaerat
+          mollitia eos dolorem fugiat quibusdam, laboriosam distinctio odit.
+          Alias, velit. Nostrum, dolor! Officia cumque delectus recusandae
+          excepturi natus laborum aliquam minima sed, quod architecto.
+        </p>
+      </section>
+      <!-- portfolio container -->
+      <section class="page-section" id="work">
+        <h2>Work</h2>
+      </section>
+      <section>
+          <img src="images\02-portfolio-4.jpg" alt="people on beach surfing"/>
+          <img src="images\02-portfolio-1.jpg" alt="LED wall"/>
+          <img src="images\02-portfolio-2.jpg" alt="calculator"/>
+          <img src="images\02-portfolio-3.jpg" alt="toy car on pastel background"/>
+          <img src="images\02-run-buddy.jpg" alt="submission form"/>
+      </section>
+      <!-- contact -->
+        <!--Replaced section with the semantic html tag footer.-->
+        <footer class="page-section-contact" id="contact">
+          <h2>Contact Me</h2>
+          <ul>
+          <li>555 555 5555</li>
+          <li>lernantino@website.com</li>
+          <li>GitHub</li>
+          <li>Twitter</li>
+          <li>Spotify</li>
+        </ul>
+      </footer>
+    </main>
+  </body>
 </html>
