@@ -1,3 +1,8 @@
+:root {
+  --primary-color: skyblue;
+}
+
+
 * {
   box-sizing: border-box;
 }
@@ -15,10 +20,13 @@ body {
 }
 
 .hero-banner {
-  background-image: url(images\02-hero-bg.jpg);
+  background-image: url(/images/02-hero-bg.jpg);
   margin: 0.5px;
   width: 100% ;
-  /*display: inline-block;*/
+  height: 100px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
 }
 
 header {
@@ -29,7 +37,7 @@ background-color: rgb(62, 56, 56) ;
 
 }
  a {
-  color: skyblue;
+  color: var( --primary-color, skyblue);
   align-items: center;
   margin: 10px;
  
@@ -37,15 +45,17 @@ background-color: rgb(62, 56, 56) ;
  
 nav {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
 }
-nav > a {
+/*nav > a {
   display; flex;
   flex-direction: flex- end;
-}
+}*/
 #learnantino {
   display: flex;
-  background-color: skyblue;
+  background-color: var(--primary-color, skyblue );
   padding: 1px;
   width: 200px;
   margin: 3px;
@@ -54,10 +64,10 @@ nav > a {
 }
 #subtitle {
   display: flex;
-  background-color: skyblue;
-  padding: 1px;
+  background-color: var(--primary-color, skyblue);
+  padding: 3px;
   width: 230px;
-  margin: 3px;
+  margin: 10px;
   justify-content: center;
 }
 
@@ -80,7 +90,36 @@ p {
 #contact p {
   justify-content:space-evenly;
 }
-footer {
+ul {
   display: flex;
+  flex-direction: row;
+  justify-items: flex-end;
+  list-style-type: none;
 }
 
+#portfolio-images {
+  border-color: var(--primary-color, skyblue);
+  display: grid;
+  grid-template-columns: 60% 20% 20%;
+  grid-template-rows: 100px 50px 50px 50px 50px;
+  grid-template-areas:
+  "surf surf surf"
+  "LED     calculator"
+  "pastel   form"
+  ;
+}
+#surf {
+  grid-area: surf;
+}
+#led {
+  grid-area: LED ;
+}
+#calculator {
+  grid-area: calculator;
+}
+#pastel {
+  grid-area: pastel;
+}
+#form {
+  grid-area: form;
+}
